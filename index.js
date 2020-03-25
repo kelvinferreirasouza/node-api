@@ -8,6 +8,7 @@ const app = express();
 mongoose.connect(
     'mongodb://localhost:27017/nodeapi', { useNewUrlParser: true });
 
+require('./src/models/Product');
 
 // Primeira Rota
 app.get('/', (req, res) => {
